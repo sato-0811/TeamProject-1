@@ -71,18 +71,30 @@ public class Score
      * @return    총점에 해당되는 성적
      */
     public String getGrade(double total) {
-        if (total >= 81) {
+        if (total >= 90) {
+            return "A+";
+        } 
+        else if (total >= 85) {
             return "A";
         } 
-        else if (total >= 45) {
+        else if (total >= 70) {
+            return "B+";
+        } 
+        else if (total >= 55) {
             return "B";
         } 
-        else if (total >= 30) {
-            return "C";
+        else if (total >= 45) {
+            return "C+";
         } 
-        else if (total >= 15) {
+        else if (total >= 35) {
+            return "C+";
+        } 
+        else if (total >= 25) {
+            return "D+";
+        } 
+        else if (total >= 15){
             return "D";
-        } 
+        }
         else {
             return "F";
         }
